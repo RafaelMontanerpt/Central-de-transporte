@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/styles.css">
+    <title>Contacto - Línea Mitre</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <img id="img1" src="/img/Gemini_Generated_Image_.png" alt="Línea Mitre">
+            <h1>Centro de transporte ferroviario - Línea Mitre</h1>
+            <ul>
+                <li><a href="/index.html">Ramales</a></li>
+                <li><a href="/accesibilidad.html">Accesibilidad</a></li>
+                <li><a href="/contacto.html">Contacto</a></li>
+                <li id="SUBE"><a href="/sube.html">SUBE</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="contacto-header">
+            <h1>Contacto y Atención al Pasajero</h1>
+            <p>Estamos para ayudarte. Ingresá tu consulta o comunicate con nuestros canales oficiales de atención.</p>
+        </section>
+
+        <section id="contacto-main">
+            <div id="form-col">
+                <h2>Envianos tu consulta</h2>
+                <div id="form-contacto">
+                    <label>Nombre completo</label>
+                    <input type="text" id="input-nombre" placeholder="Juan Pérez">
+                    <label>Correo electrónico</label>
+                    <input type="email" id="input-email" placeholder="juan.perez@email.com">
+                    <label>Motivo de consulta</label>
+                    <select id="input-motivo">
+                        <option value="">Seleccioná un motivo</option>
+                        <option>Horarios</option>
+                        <option>Accesibilidad</option>
+                        <option>Objetos perdidos</option>
+                        <option>Reclamos</option>
+                        <option>Otros</option>
+                    </select>
+                    <label>Mensaje</label>
+                    <textarea id="input-mensaje" placeholder="Describí tu consulta con el mayor detalle posible..."></textarea>
+                    <button id="btn-enviar" onclick="enviarFormulario()">Enviar mensaje</button>
+                </div>
+            </div>
+
+            <div id="info-col">
+                <div class="tarjeta-contacto">
+                    <span class="icono-tarjeta">📞</span>
+                    <div>
+                        <p><strong>Centro de Atención</strong></p>
+                        <h2 id="tel-principal">0800-MITRE-INFO</h2>
+                        <p>Lunes a viernes de 08:00 a 20:00 hs</p>
+                    </div>
+                </div>
+
+                <div id="telefonos-emergencia">
+                    <h3>Teléfonos de Emergencia</h3>
+                    <table>
+                        <tbody>
+                            <tr><td class="num-emergencia">100</td><td>Bomberos</td></tr>
+                            <tr><td class="num-emergencia">101</td><td>Policía</td></tr>
+                            <tr><td class="num-emergencia">107</td><td>SAME</td></tr>
+                            <tr><td class="num-emergencia">147</td><td>Atención Ciudadana</td></tr>
+                        </tbody>
+                    </table>
+                </div>
+
+<div class="tarjeta-oficina">
+    <div class="tarjeta-oficina-header">
+        <div class="icono-ubicacion">
+            <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#009EE3" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                <circle cx="12" cy="10" r="3"></circle>
+            </svg>
+        </div>
+        
+        <div class="texto-oficina">
+            <h3>Oficina Central de Atención</h3>
+            <p>Av. Dr. José María Ramos Mejía 1430, Retiro, CABA</p>
+        </div>
+    </div>
+    
+    <iframe 
+        class="img-oficina-card" 
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3283.8214303350346!2d-58.3773176!3d-34.5910129!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bccab5e2528157%3A0x63359d9972b22ec6!2sEstaci%C3%B3n%20Retiro%20Mitre!5e0!3m2!1ses!2sar!4v1714523091107!5m2!1ses!2sar" 
+        allowfullscreen="" 
+        loading="lazy" 
+        referrerpolicy="no-referrer-when-downgrade">
+    </iframe>
+</div>
+            </div>
+        </section>
+    </main>
+
+    <section id="banner-sube">
+        <p id="sube-logo-text"><span>S</span>UBE</p>
+        <p id="banner-sube-titulo">Recarga tu tarjeta SUBE</p>
+        <a href="/sube.html" class="btn-sube-carga">Carga aquí</a>
+        <a href="/sube.html" class="btn-sube-saldo">Consultá tu saldo</a>
+    </section>
+
+    <footer id="footer-light">
+        <div id="footer-cols">
+            <div class="footer-col">
+                <h4>Información</h4>
+                <a href="#">Sobre nosotros</a>
+                <a href="#">Prensa</a>
+                <a href="#">Trabaja con nosotros</a>
+            </div>
+            <div class="footer-col">
+                <h4>Servicios</h4>
+                <a href="#">Horarios</a>
+                <a href="#">Tarifas</a>
+                <a href="#">Accesibilidad</a>
+            </div>
+            <div class="footer-col">
+                <h4>Ayuda</h4>
+                <a href="#">Preguntas frecuentes</a>
+                <a href="#">Objetos perdidos</a>
+                <a href="#">Reclamos</a>
+            </div>
+            <div class="footer-col">
+                <h4>Legal</h4>
+                <a href="#">Términos y condiciones</a>
+                <a href="#">Política de privacidad</a>
+                <a href="#">Normativa</a>
+            </div>
+        </div>
+        <p id="footer-copy">© 2026 Centro de Transporte Ferroviario - Línea Mitre. Todos los derechos reservados.</p>
+    </footer>
+
+    <script src="/JS/contacto.js"></script>
+</body>
+</html>
