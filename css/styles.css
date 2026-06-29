@@ -792,7 +792,8 @@ th {
     flex-direction: column;
 }
 
-.dropdown:hover .dropdown-content {
+.dropdown:hover .dropdown-content,
+.dropdown.abierto .dropdown-content {
     display: flex;
 }
 
@@ -885,4 +886,181 @@ nav .dropdown-content a:hover {
         border: 1px solid #EAEAEA;
         margin-top: 10px !important;
     }
+}
+/* --- sube.html --- */
+
+#sube-hero {
+    background: linear-gradient(135deg, #009EE3 0%, #006aa8 100%);
+    color: white;
+    padding: 4rem;
+    text-align: left;
+}
+
+#sube-hero-inner { max-width: 700px; }
+
+#sube-hero h1 {
+    color: white;
+    font-size: 2.8rem;
+    margin-bottom: 1rem;
+}
+
+#sube-hero p {
+    color: rgba(255,255,255,.85);
+    font-size: 1.1rem;
+    max-width: 560px;
+}
+
+#sube-info, #sube-tarifas, #sube-obtener {
+    padding: 3rem 4rem;
+}
+
+#sube-tarifas { background: #F8F9FA; }
+
+#sube-info h2, #sube-tarifas h2, #sube-obtener h2 {
+    margin-bottom: 2rem;
+}
+
+.sube-grid {
+    display: flex;
+    gap: 1.5rem;
+    flex-wrap: wrap;
+}
+
+.sube-card {
+    flex: 1;
+    min-width: 200px;
+    background: white;
+    border: 1px solid #E0E0E0;
+    border-radius: 10px;
+    padding: 1.8rem;
+}
+
+#sube-tarifas .sube-card { background: white; }
+
+.sube-icono {
+    font-size: 2rem;
+    margin-bottom: 0.8rem;
+}
+
+.sube-card h3 {
+    font-size: 1rem;
+    margin-bottom: 0.5rem;
+    color: #1A1A1A;
+}
+
+.sube-card p { font-size: 0.92rem; color: #555; }
+
+/* --- accesibilidad.html --- */
+
+#acc-hero {
+    background: #1A1A1A;
+    color: white;
+    padding: 4rem;
+}
+
+#acc-hero-inner { max-width: 700px; }
+
+#acc-hero h1 {
+    color: white;
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+#acc-hero p {
+    color: #AAAAAA;
+    font-size: 1.1rem;
+    max-width: 560px;
+}
+
+#acc-destacados {
+    padding: 0 4rem;
+}
+
+.acc-item {
+    display: flex;
+    gap: 3rem;
+    align-items: flex-start;
+    padding: 3.5rem 0;
+    border-bottom: 1px solid #E0E0E0;
+}
+
+.acc-item:last-child { border-bottom: none; }
+
+.acc-item.invertido { flex-direction: row-reverse; }
+
+.acc-icono-grande {
+    width: 80px;
+    height: 80px;
+    flex-shrink: 0;
+    background: #EEF7FD;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 18px;
+}
+
+.acc-icono-grande svg { width: 100%; height: 100%; }
+
+.acc-item-texto h2 { font-size: 1.6rem; margin-bottom: 0.8rem; }
+.acc-item-texto p { color: #4A4A4A; line-height: 1.7; margin-bottom: 1rem; }
+
+.acc-lista {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 0.4rem;
+    padding: 0;
+}
+
+.acc-lista li {
+    font-size: 0.92rem;
+    color: #555;
+    padding-left: 1.2rem;
+    position: relative;
+}
+
+.acc-lista li::before {
+    content: '✓';
+    position: absolute;
+    left: 0;
+    color: #009EE3;
+    font-weight: 900;
+}
+
+.conexiones-grid {
+    display: flex;
+    gap: 1.5rem;
+    flex-wrap: wrap;
+}
+
+.conexion-card {
+    flex: 1;
+    min-width: 200px;
+    background: white;
+    border-radius: 10px;
+    padding: 1.6rem;
+    border: 1px solid #E0E0E0;
+}
+
+.conexion-card h3 { font-size: 1rem; margin-bottom: 0.5rem; }
+.conexion-card p { font-size: 0.9rem; color: #555; }
+
+#acc-contacto {
+    padding: 3.5rem 4rem;
+    background: #009EE3;
+    color: white;
+}
+
+#acc-contacto h2 { color: white; font-size: 2rem; margin-bottom: 0.8rem; }
+#acc-contacto p { color: rgba(255,255,255,.85); max-width: 600px; font-size: 1rem; }
+
+@media (max-width: 768px) {
+    #sube-hero, #sube-info, #sube-tarifas, #sube-obtener,
+    #acc-hero, #acc-destacados, #conexiones, #acc-contacto {
+        padding-left: 1.5rem;
+        padding-right: 1.5rem;
+    }
+
+    .acc-item, .acc-item.invertido { flex-direction: column; }
 }
